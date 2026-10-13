@@ -256,7 +256,7 @@ class MainActivity : AppCompatActivity() {
         val fps = fpsOptions[fpsIdx]
         val awb = wbOptions[wbIdx].second
         try {
-            val previewB = Preview.Builder().setDynamicRange(dr)
+            val previewB = Preview.Builder()
             val recorder = Recorder.Builder()
                 .setQualitySelector(
                     QualitySelector.from(
